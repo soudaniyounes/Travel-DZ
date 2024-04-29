@@ -1,0 +1,43 @@
+.review{
+    padding: 3rem 9%;
+        .heading{
+            text-align:center;
+            margin: 3rem 1rem;
+            span{     
+                color:$main-color;     
+                background-color: rgba(255, 165,0,.2);
+                margin: 1rem .2rem;
+                font-size: 3.5rem;
+                padding:.2rem .5rem;
+            }
+        }
+        
+        .box{
+          border-radius: 8px;
+          padding: 2rem;
+          box-shadow:0 1rem 2rem rgba(0,0,0,.3);
+          margin: 2rem;
+          text-align: center;
+          img{
+            border-radius: 50%;
+            margin: 1rem;
+            width: 200px;
+            height:200px;
+            object-fit: cover;
+          }
+          h2{
+            font-size: 3rem;
+            font-weight:bold;
+            margin: 1rem 0;
+            color: $main-color;
+          }
+          p{
+              color: #777;
+              font-size: 2rem;
+          }
+          .logo{
+            color: $main-color;
+            font-size: 2.5rem;
+        }
+        }
+    }

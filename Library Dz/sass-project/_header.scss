@@ -1,0 +1,190 @@
+header{
+    background-color:rgb(32, 32, 99) ;
+    padding:2rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 22px;
+    color:#fff;
+    width:100%;
+    z-index: 1000;
+    .logo{
+        font-weight: bold;
+        span{
+            color:$main-color;
+        }
+    }
+    .navbar{
+        a{
+            color:#fff;
+            margin-left:1rem;
+            &:hover{
+                color:$main-color;
+            }
+        }
+  
+    }
+    .icons {
+        cursor: pointer;
+        .srch,.fa-user{
+            margin: 0 1rem;
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+    .search-content{
+        position: absolute;
+        z-index: 1003;
+        top:100%;left:0;right:0;
+        display: flex;
+        align-items: center;
+        background: rgb(32, 32, 99);
+        padding: 15px;
+        border-top: 1px solid #5a5858;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+       
+        &.active{
+            clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+        }
+        #search{
+            margin-right: 1rem;
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            width: 100%;
+        }
+        label{
+            font-size: 2.5rem;
+            color:#fff;
+            cursor: pointer;
+            &:hover{
+                color:$main-color;
+            }
+        }
+    }
+    .menu-bar{
+        border:1px solid #fff;
+        color:#fff;
+        padding: 0px 8px;
+        font-size: 3rem;
+        cursor: pointer;
+        text-align: center;
+        display: none;
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+.login-form{
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;width:100%;
+    z-index: 1005;
+    form{
+    width: 50rem;
+    padding: 2rem;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    .close{
+        position: absolute;
+        right: 15px;
+        top: 0;
+        font-size: 4rem;
+        cursor: pointer;
+        color: $main-color;
+    }
+
+    .text{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: $main-color;
+    }
+    .email,.pass{
+        display: block;
+        margin: 3rem 0;
+        width: 100%;
+        border: 1px solid $main-color;
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.9rem;
+        P{
+            cursor: pointer;
+            margin:auto;
+            font-size: 2rem;
+            margin-right: 0;
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+    .btn{
+        width: 80%;
+        padding: 1.5rem 2.5rem;
+        margin: 3rem 0;
+        border: 1px solid $main-color;
+        background-color: #fff;
+        color: $main-color;
+        font-size: 3rem;
+        border-radius: 12px;
+        &:hover{
+         background-color: $main-color;
+         color: #fff;
+        }
+    }
+.create{
+    font-size: 1.7rem;
+    a{
+        color: $main-color;
+    }
+}
+}
+}
+.home{
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    .content{
+        color:$main-color;
+        background-color: rgba(32 32 99 /50%);
+        margin: 2rem 4rem;
+        padding: 2rem;
+        border-radius: 12px;
+    h2{
+        font-size: 4rem;
+        margin: 1rem 0 2rem;
+    } 
+    p{
+        font: {
+            size:2.5rem;
+            weight: bolder;
+        };
+        line-height: 1.6;
+        margin: 0.5rem;
+        color: #fff;
+    }
+    .btn{
+        padding: 2rem;
+        color: #fff;
+        font-weight: bolder;
+        background-color: $main-color;
+        border-radius: 8px;
+        margin: 1.5rem;
+    }
+    }
+}

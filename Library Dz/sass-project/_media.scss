@@ -1,0 +1,177 @@
+@media (max-width:997px){
+    header .menu-bar{
+        display: inline-block;
+    }
+    .navbar {
+        @include navBar;
+        &.active{
+            clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+        }
+
+        a{
+            margin: 1.2rem 1rem;
+            cursor: pointer;
+            &:not(:last-of-type):hover{
+                color:$main-color;
+                border-bottom: 1px solid $main-color
+            }
+        }
+    }
+}
+@media (max-width:520px){
+    .login-form{
+
+        form{
+        width: 35rem;
+        padding: 4rem;
+
+        .close{
+ 
+            font-size: 3rem;
+
+        }
+    
+        .text{
+        margin-bottom: 1.8rem;
+        font-size: 1.8rem;
+        color: $main-color;
+        }
+        .email,.pass{
+
+            margin: 2rem 0;
+            padding: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .content{
+            font-size: 1.2rem;
+            P{
+                font-size: 1.2rem;
+        }
+    }
+    .btn{
+
+        padding: 0.5rem 1.5rem;
+        margin: 3rem 0;
+    
+        font-size: 2.5rem;
+        
+    }
+}
+} 
+    
+}
+
+//home
+@media (max-width:991px){
+    .home{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+    }
+}
+
+@media (max-width:450px){
+    .home{
+    .content{
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    }
+    .book{
+    .heading{
+        span{
+            font-size: 2.5rem;         
+        }
+    }
+   }
+    .contries{
+    .heading{
+        span{
+            font-size: 2.5rem;         
+        }
+    }
+   }
+    .services{
+    .heading{
+        span{
+            font-size: 2.5rem;         
+        }
+    }
+   }
+    .gallery{
+    .heading{
+        span{
+            font-size: 2.5rem;         
+        }
+    }
+.container{
+    .box{
+
+        .content{
+         .title{
+             font-size: 2.5rem;
+             }
+             p{
+             font-size: 1.8rem;
+             }
+             .btn{
+             font-size: 1.5rem;
+             }
+        }
+    }
+}
+   }
+   .review{
+    span{
+        font-size: 2.5rem;         
+    }
+}
+   .contact{
+        .heading{
+            span{
+                font-size: 2.5rem;         
+            }
+        }
+        .container{
+                .contact-form{
+                    padding: 2rem;
+                    input,textarea{
+                        width: 100%;
+                    }
+                }
+        }
+
+}
+
+}
+@media (max-width:771px){
+  
+  .footer{
+    .container{
+
+        .about-us{
+            flex:1 1 auto;
+        }
+    }
+    .section{
+        li{
+            display: block;
+        }
+      }    
+  }
+  
+}
+@media (min-width:991px){
+  
+  .footer{
+    .container{
+       gap: 10rem;
+       .about-us{
+        text-align: center;
+       }
+    }
+
+  }
+  
+}

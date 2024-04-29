@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixin";
+@import "header";
+@import "book";
+@import "contries";
+@import "services";
+@import "gallery";
+@import "review";
+@import "contact";
+@import "footer";
+@import "media";
+
+*{
+    font-family: 'Nunito',sans-serif;
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    text-transform: capitalize;
+    outline: none;border: none;
+    text-decoration: none;
+    transition:all .2s linear;
+}
+*::selection{
+    background-color: $main-color;
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+    height:5rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: $main-color;
+  }
